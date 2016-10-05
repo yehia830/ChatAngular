@@ -18,7 +18,7 @@ public class MyClientTest {
     public static final String SERVER_TRANSACTION_OK = "TX::OK";
     @Before
     public void setUp() throws Exception {
-//        MyServer server = new MyServer();
+//        Server server = new Server();
 //        server.startServer();
     }
 
@@ -34,7 +34,7 @@ public class MyClientTest {
         BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         out.println();
         String serverResponse  = in.readLine();
-        assertEquals("Message received! :-)",serverResponse);
+        assertEquals("Message received!",serverResponse);
 
 
     }

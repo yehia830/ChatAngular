@@ -5,8 +5,8 @@ package com.tiy;
  */
 public class Runner {
     public static void main(String[] args) {
-        MyServer myServer = new MyServer();
-        myServer.startServer();
+        Server server = new Server();
+        server.startServer();
     }
 
 
